@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App.ai | Dashboard</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .app h1 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .app {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .app a {
+            text-decoration: none;
+        }
+
+        .app1, .app2, .app3, .app4, .app5 {
+            background: #f7f7f7;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            padding: 30px 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .app1:hover, .app2:hover, .app3:hover, .app4:hover, .app5:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .app img {
+            height: 60px;
+            margin-bottom: 20px;
+        }
+
+        .app h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .app p {
+            font-size: 0.95rem;
+            color: #444;
+        }
+
+        .why, .contact, .donate {
+            margin-top: 80px;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 60px 30px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .why h2, .contact h2, .donate h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .why p, .contact p, .donate p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .app h1 {
+                font-size: 2rem;
+            }
+
+            .why h2, .contact h2, .donate h2 {
+                font-size: 1.7rem;
+            }
+
+            .why p, .contact p, .donate p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1 class="logo">App.AI</h1>
+        <ul class="links">
+            <li><a href="#apps">Apps</a></li>
+            <li><a href="#why">Why?</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#donate">Donate</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="apps" class="app">
+            <h1>Choose Your App</h1>
+            <a href="#">
+                <div class="app1">
+                    <img src="#" alt="compilar_ic">
+                    <h3>Online Compiler</h3>
+                    <p>It is an online compiler designed with many features.</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="app2">
+                    <img src="#" alt="homework_bot">
+                    <h3>Assignment Worker</h3>
+                    <p>Completes all your assignments efficiently.</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="app3">
+                    <img src="#" alt="Image_to_pdf">
+                    <h3>Image to PDF</h3>
+                    <p>Converts all your images into a single PDF.</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="app4">
+                    <img src="#" alt="word formater">
+                    <h3>Word Formatter</h3>
+                    <p>Creates Word files from content and template design.</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="app5">
+                    <img src="#" alt="compilar_ic">
+                    <h3>App.ai Classroom</h3>
+                    <p>Online classroom with assignments, live lectures, coding tutorials & roadmaps.</p>
+                </div>
+            </a>
+        </div>
+
+        <div id="why" class="why">
+            <h2>Why Choose App.ai?</h2>
+            <p>
+                App.ai is built to empower students and educators with essential tools to learn, teach, and collaborate effectively. Our platform is designed with simplicity, functionality, and modern design in mind — delivering productivity, efficiency, and creativity all in one place.
+            </p>
+        </div>
+
+        <div id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>
+                Reach out to us at support@app.ai or follow us on our social platforms for updates and support.
+            </p>
+        </div>
+
+        <div id="donate" class="donate">
+            <h2>Support Our Mission</h2>
+            <p>
+                Your donations help us build better educational tools for everyone. Every contribution counts.
+            </p>
+        </div>
+    </main>
+    <script type="module" src="/assets/js/update.js"></script>
+</body>
+
+</html>
