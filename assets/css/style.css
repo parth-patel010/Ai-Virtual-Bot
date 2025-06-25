@@ -1,19 +1,21 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-body{
+
+body {
     background-color: #f4f4f5;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     padding: 40px 30px 30px 30px;
     align-content: center;
 }
 
-.logo{
+.logo {
     font-size: 20px;
 }
 
@@ -22,15 +24,15 @@ nav{
     gap: 20px;
 }
 
-.links li{
+.links li {
     list-style-type: none;
 }
 
-.links li a{
+.links li a {
     text-decoration: none;
 }
 
-.signup{
+.signup {
     padding: 15px;
     background-color: black;
     color: white;
@@ -38,11 +40,11 @@ nav{
     transition: opacity 0.5s;
 }
 
-.signup:hover{
+.signup:hover {
     opacity: 0.7;
 }
 
-.login{
+.login {
     color: black;
     border: 1px solid gray;
     border-radius: 30px;
@@ -50,17 +52,17 @@ nav{
     transition: opacity 0.5s;
 }
 
-.login:hover{
+.login:hover {
     opacity: 0.5;
 }
 
 .thin-line {
     display: block;
-    width: 100%;         
+    width: 100%;
     border-top: 0.3px solid grey;
 }
 
-main{
+main {
     margin-top: 90px;
     background-color: #f4f4f5;
     height: 80vh;
@@ -69,108 +71,118 @@ main{
     justify-content: center;
 }
 
-.login-container{
-      background: white;
-      padding: 40px 30px;
-      border-radius: 20px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-      width: 350px;
-      text-align: center;
+.login-container {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
 }
 
-.main{
+.main {
     font-size: 30px;
 }
 
-.sub{
+.sub {
     font-size: 35px;
 }
 
-.use{
+.use {
     font-size: 18px;
     padding-bottom: 20px;
 }
 
-.google-btn, .apple-btn, .email-btn{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      background: #202124;
-      color: white;
-      border: none;
-      border-radius: 10px;
-      padding: 15px;
-      font-size: 16px;
-      width: 100%;
-      margin-bottom: 15px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
+.google-btn,
+.apple-btn,
+.email-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #202124;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
 
-    .google-btn:hover , .apple-btn:hover, .email-btn:hover{
-      background-color: #3c4043;
-    }
+.google-btn:hover,
+.apple-btn:hover,
+.email-btn:hover {
+    background-color: #3c4043;
+}
 
-    .google-btn img {
-      height: 20px;
-      margin-right: 10px;
-    }
-    .apple-btn img{
-        height: 20px;
-        margin-right: 10px;
-    }
+.google-btn img {
+    height: 20px;
+    margin-right: 10px;
+}
 
-    .email-btn img{
-        height: 20px;
-        margin-right: 10px;
-    }
+.apple-btn img {
+    height: 20px;
+    margin-right: 10px;
+}
 
-    .apple-btn{
-        margin-top: -20px
-    }
-    .condition{
-        margin-left: 70px;
-        font-size: 12px;
-        width: 220px;
-    }
+.email-btn img {
+    height: 20px;
+    margin-right: 10px;
+}
 
-    video{
-        border-radius: 20px;
-    }
-    footer{
-        text-align: center;
-        background-color: #f4f4f5;
-    }
-    footer ul{
-        padding-top: 10px;
-        padding-bottom: 20px;
-        justify-content: center;
-        display: flex;
-        gap: 20px;
-    }
+.apple-btn {
+    margin-top: -20px
+}
 
-    footer ul li{
-        list-style-type: none;
-    }
+.condition {
+    margin-left: 70px;
+    font-size: 12px;
+    width: 220px;
+}
 
-    footer ul li a{
-        text-decoration: none;
-        color: gray;
-        transition: color 0.5s;
-    }
+video {
+    border-radius: 20px;
+}
 
-    footer ul li a:hover{
-        color: black;
-    }
-    .secure{
-        font-size: 12px;
-        font-family: sans-serif;
-        color: gray;
-        text-decoration: none;
-        padding-bottom: 30px;
-        transition: color 0.5s;
-    }
-    .secure:hover{
-        color: black;
-    }
+footer {
+    text-align: center;
+    background-color: #f4f4f5;
+}
+
+footer ul {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: gray;
+    transition: color 0.5s;
+}
+
+footer ul li a:hover {
+    color: black;
+}
+
+.secure {
+    font-size: 12px;
+    font-family: sans-serif;
+    color: gray;
+    text-decoration: none;
+    padding-bottom: 30px;
+    transition: color 0.5s;
+}
+
+.secure:hover {
+    color: black;
+}

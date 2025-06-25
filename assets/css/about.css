@@ -1,0 +1,252 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+    gap: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo {
+    font-size: 18px;
+}
+
+nav .links {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.links li {
+    list-style: none;
+}
+
+.links li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px 10px 20px;
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+}
+
+.links li a:hover {
+    background-color: rgb(247, 247, 247);
+    border-radius: 30px;
+    color: rgb(133, 132, 132);
+}
+
+main {
+    background-color: #f4f4f5;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 255);
+    color: white;
+}
+
+.about-head {
+    text-align: center;
+    padding: 50px 30px 90px 30px;
+    font-size: 35px;
+}
+
+.team-image {
+    display: block;
+    margin: auto;
+    margin-top: 0;
+    width: 50%;
+}
+
+.purpose-container {
+    text-align: center;
+}
+
+.purpose-title,
+.purpose-subtitle1,
+.purpose-subtitle2 {
+    text-align: center;
+}
+
+.purpose-title {
+    padding-top: 55px;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.purpose-subtitle2 {
+    padding-bottom: 20px;
+}
+
+.purpose-container1,
+.purpose-container2 {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    padding: 50px;
+}
+
+
+.purpose-container1 p,
+.purpose-container2 p {
+    padding-top: 20px;
+    width: 340px;
+    font-size: 15px;
+    color: rgb(80, 75, 75);
+}
+
+.opportunites {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.opportunites h5 {
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.opportunites p {
+    margin: 0 auto;
+    width: 520px;
+    font-size: 15px;
+    color: rgb(80, 75, 75);
+    padding-bottom: 30px;
+}
+
+.opportunites button {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    transition: opacity 0.5s;
+    border: none;
+    font-size: 15px;
+}
+
+.opportunites button:hover {
+    opacity: 0.7;
+}
+
+.animated-background {
+    background-image: url(/assets/images/animated-background.gif);
+    background-repeat: none;
+    background-size: cover;
+    padding: 60px;
+    color: white;
+    align-content: center;
+    font-weight: bold;
+}
+
+.animated-background h4 {
+    width: 820px;
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+.latest-company {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.latest-company h4 {
+    font-size: 25px;
+    padding-bottom: 40px;
+}
+
+.update-preview {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+main {
+    padding-bottom: 60px;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-left {
+    max-width: 300px;
+}
+
+.footer-left h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-left .tiny-text {
+    font-size: 10px;
+    color: #888;
+}
+
+.footer-left a {
+    color: #4ea1f3;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-right {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    color: #fff;
+}
