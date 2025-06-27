@@ -3,15 +3,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebas
 import { getAuth, GoogleAuthProvider, OAuthProvider, signInWithPopup, setPersistence, browserLocalPersistence, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
 
 // Firebase config
-const firebaseConfig = {
-    apiKey: "AIzaSyBi1A_eLMEAVYHYLIYCngxBghxtSX-82GQ",
-    authDomain: "code-ai-64d3f.firebaseapp.com",
-    projectId: "code-ai-64d3f",
-    storageBucket: "code-ai-64d3f.appspot.com",
-    messagingSenderId: "807664321440",
-    appId: "1:807664321440:web:8012990c6f9bf4e1379ac5",
-    measurementId: "G-52PYR9SRN6"
-};
+
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
