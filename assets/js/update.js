@@ -3,32 +3,55 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebas
 import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
 
 // Firebase config
+const firebaseConfig = {
+  apiKey: "AIzaSyBi1A_eLMEAVYHYLIYCngxBghxtSX-82GQ",
+  authDomain: "code-ai-64d3f.firebaseapp.com",
+  projectId: "code-ai-64d3f",
+  storageBucket: "code-ai-64d3f.appspot.com",
+  messagingSenderId: "807664321440",
+  appId: "1:807664321440:web:8012990c6f9bf4e1379ac5",
+  measurementId: "G-52PYR9SRN6"
+};
 
-
-//REPLACE WITH YOURS
-
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
 // Show user info
 onAuthStateChanged(auth, (user) => {
-    if (user) {
-        document.getElementById("userName").textContent = user.displayName || "No Name";
-        document.getElementById("userEmail").textContent = user.email || "No Email";
-        document.getElementById("userProfilePicture").src = user.photoURL || "/default-profile.png";
-    } else {
-        window.location.href = "/index.html";
-    }
+  if (user) {
+    document.getElementById("userProfilePicture").src = user.photoURL || "https://www.profilebakery.com/wp-content/uploads/2023/04/LINKEDIN-Profile-Picture-AI.jpg";
+  } else {
+    window.location.href = "/index.html";
+  }
 });
+
+
+  const profileImage = document.getElementById("userProfilePicture");
+  const popupMenu = document.getElementById("popupMenu");
+
+  profileImage.addEventListener("click", () => {
+    popupMenu.style.display = popupMenu.style.display === "block" ? "none" : "block";
+  });
+
+  // Hide popup when clicking outside
+  document.addEventListener("click", function (event) {
+    if (!profileImage.contains(event.target) && !popupMenu.contains(event.target)) {
+      popupMenu.style.display = "none";
+    }
+  });
+
 
 // Logout
 const logoutBtn = document.getElementById("logoutBtn");
 if (logoutBtn) {
-    logoutBtn.addEventListener("click", () => {
-        signOut(auth).then(() => {
-            window.location.href = "/index.html";
-        }).catch((error) => {
-            console.error("Logout error:", error.message);
-        });
-    });
+  logoutBtn.addEventListener("click", () => {
+    signOut(auth)
+      .then(() => {
+        window.location.href = "/index.html";
+      })
+      .catch((error) => {
+        console.error("Logout error:", error.message);
+      });
+  });
 }
