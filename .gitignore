@@ -1,0 +1,12 @@
+node_modules
+dist
+.DS_Store
+server/public
+vite.config.ts.*
+*.tar.gz
+
+# API Keys - Keep personal keys private
+api.json
+
+# Dataset folder - Training data
+generated-code-dataset/generation_*

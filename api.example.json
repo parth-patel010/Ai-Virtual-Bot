@@ -1,0 +1,21 @@
+{
+  "gemini": {
+    "apiKey": "YOUR_GEMINI_API_KEY_HERE",
+    "model": "gemini-2.0-flash-exp",
+    "maxTokens": 4096,
+    "temperature": 0.7
+  },
+  "team": {
+    "description": "Each team member can add their own Gemini API key here",
+    "instructions": [
+      "1. Copy this file to api.json: cp api.example.json api.json", 
+      "2. Get your API key from https://aistudio.google.com/app/apikey",
+      "3. Replace YOUR_GEMINI_API_KEY_HERE with your actual key",
+      "4. Keep api.json private and don't commit it to version control"
+    ]
+  },
+  "fallback": {
+    "enabled": true,
+    "description": "Template responses when no API key is provided"
+  }
+}
