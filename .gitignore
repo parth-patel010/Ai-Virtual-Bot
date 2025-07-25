@@ -5,7 +5,7 @@ server/public
 vite.config.ts.*
 *.tar.gz
 
-# API Keys - Keep personal keys private
+# API Keys - Keep personal keys privat
 api.json
 
 # Dataset folder - Training data
